@@ -144,7 +144,7 @@ class face_recognition:
 
                 try:
                     conn = mysql.connector.connect(
-                        host="localhost", username="root", password="Afki4216@098.", database="face_recognizer"
+                        host="localhost", username="root", password="************", database="face_recognizer"
                     )
                     my_cursor = conn.cursor()
                     my_cursor.execute("SELECT name, roll_no, department FROM student WHERE student_id = %s", (id,))
@@ -210,4 +210,5 @@ class face_recognition:
 if __name__ == "__main__":
     root = Tk()
     obj = face_recognition(root)
+
     root.mainloop()
